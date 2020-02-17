@@ -13,8 +13,12 @@
 
             TopPart topPart = new TopPart(logoLength, logoHeight, size);
 
-            Print print = new Print();
+            Print print = new Print();      
             print.PrintPart(topPart);
+
+            BottomPart bottomPart = new BottomPart(logoLength, logoHeight, size);
+
+            print.PrintPart(bottomPart);
         }
     }
 }

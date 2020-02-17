@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace MMLogo
+﻿namespace MMLogo
 {
+    using System;
     public class TopPart : Part
     {
         public TopPart(int logoLength, int logoHeight, int size)
