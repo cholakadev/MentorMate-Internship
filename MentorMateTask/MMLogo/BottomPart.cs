@@ -8,33 +8,42 @@
         {
         }
 
-        public override void PrintFirstLine(int i, int size)
+        public override void PrintFirstLine(int i, int n)
         {
-            if (i > 0 && i <= size - i - 1)
+            if (i > 0 && i <= n - i - 1)
             {
                 Console.Write('-');
             }
 
-            else if (i > size - i - 1 && i <= size - i - 1 + 2 * size)
+            else if (i > n - i - 1 && i <= n - i - 1 + 2 * n)
             {
                 Console.Write('*');
             }
 
-            else if (i > size - i - 1 + 2 * size && i <= size - i + 1 + 2 * size)
+            else if (i > n - i - 1 + 2 * n && i <= n - i + 1 + 2 * n)
             {
                 Console.Write('-');
             }
 
-            else if (i > size - i + 1 + 2 * size && i <= size - i + 1 + 6 * size - 1)
+            else if (i > n - i + 1 + 2 * n && i <= n - i + 1 + 6 * n - 1)
             {
                 Console.Write('*');
             }
 
-            else if (i > size - i + 1 + 6 * size - 1 && i <= size - i + 1 + 6 * size + 1)
+            else if (i > n - i + 1 + 6 * n - 1 && i <= n - i + 1 + 6 * n)
             {
                 Console.Write('-');
             }
 
+            else if (i > n - i + 1 + 6 * n && i <= n - i + 1 + 6 * n + 2 * n)
+            {
+                Console.Write('*');
+            }
+
+            else if (i > n - i + 1 + 6 * n + 2 * n && i <= n - i + 1 + 6 * n + 2 * n + i)
+            {
+                Console.Write('-');
+            }
         }
 
         public override void PrintNextLines(int jIndex, int size, int iIndex)
