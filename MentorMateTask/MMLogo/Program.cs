@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace MMLogo
+﻿namespace MMLogo
 {
+    using System;
     class Program
     {
         static void Main(string[] args)
@@ -16,8 +15,6 @@ namespace MMLogo
 
             Print print = new Print();
             print.PrintPart(topPart);
-
-
         }
     }
 }

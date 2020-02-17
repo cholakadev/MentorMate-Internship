@@ -2,20 +2,14 @@
 
 namespace MMLogo
 {
-    public class TopPart : IPart
+    public class TopPart : Part
     {
         public TopPart(int logoLength, int logoHeight, int size)
+            : base(logoLength, logoHeight, size)
         {
-            this.LogoLength = logoLength;
-            this.LogoHeight = logoHeight;
-            this.Size = size;
         }
 
-        public int LogoLength { get; set; }
-        public int LogoHeight { get; set; }
-        public int Size { get; set; }
-
-        public void PrintFirstLine(int iIndex, int size)
+        public override void PrintFirstLine(int iIndex, int size)
         {
             if (iIndex < size)
             {
@@ -43,7 +37,7 @@ namespace MMLogo
             }
         }
 
-        public void PrintNextLines(int jIndex, int size, int iIndex)
+        public override void PrintNextLines(int jIndex, int size, int iIndex)
         {
             if (jIndex < size - iIndex)
             {
