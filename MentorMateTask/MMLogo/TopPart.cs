@@ -8,29 +8,29 @@
         {
         }
 
-        public override void PrintFirstLine(int iIndex, int size)
+        public override void PrintFirstLine(int jIndex, int size)
         {
-            if (iIndex < size)
+            if (jIndex < size)
             {
                 Console.Write('-');
             }
 
-            else if (iIndex > size && iIndex <= 2 * size)
+            else if (jIndex > size && jIndex <= 2 * size)
             {
                 Console.Write('*');
             }
 
-            else if (iIndex > 2 * size && iIndex <= 3 * size)
+            else if (jIndex > 2 * size && jIndex <= 3 * size)
             {
                 Console.Write('-');
             }
 
-            else if (iIndex > 3 * size && iIndex <= 4 * size)
+            else if (jIndex > 3 * size && jIndex <= 4 * size)
             {
                 Console.Write('*');
             }
 
-            else if (iIndex > 4 * size && iIndex <= 5 * size)
+            else if (jIndex > 4 * size && jIndex <= 5 * size)
             {
                 Console.Write('-');
             }

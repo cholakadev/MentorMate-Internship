@@ -8,47 +8,52 @@
         {
         }
 
-        public override void PrintFirstLine(int i, int n)
+        public override void PrintFirstLine(int j, int n)
         {
-            if (i > 0 && i <= n - i - 1)
+            if (j > 0 && j <= n - j - 1)
             {
                 Console.Write('-');
             }
 
-            else if (i > n - i - 1 && i <= n - i - 1 + 2 * n)
+            else if (j > n - j - 1 && j <= n - j - 1 + 2 * n)
             {
                 Console.Write('*');
             }
 
-            else if (i > n - i - 1 + 2 * n && i <= n - i + 1 + 2 * n)
+            else if (j > n - j - 1 + 2 * n && j <= n - j + 1 + 2 * n)
             {
                 Console.Write('-');
             }
 
-            else if (i > n - i + 1 + 2 * n && i <= n - i + 1 + 6 * n - 1)
+            else if (j > n - j + 1 + 2 * n && j <= n - j + 1 + 6 * n - 1)
             {
                 Console.Write('*');
             }
 
-            else if (i > n - i + 1 + 6 * n - 1 && i <= n - i + 1 + 6 * n)
+            else if (j > n - j + 1 + 6 * n - 1 && j <= n - j + 1 + 6 * n)
             {
                 Console.Write('-');
             }
 
-            else if (i > n - i + 1 + 6 * n && i <= n - i + 1 + 6 * n + 2 * n)
+            else if (j > n - j + 1 + 6 * n && j <= n - j + 1 + 6 * n + 2 * n)
             {
                 Console.Write('*');
             }
 
-            else if (i > n - i + 1 + 6 * n + 2 * n && i <= n - i + 1 + 6 * n + 2 * n + i)
+            else if (j > n - j + 1 + 6 * n + 2 * n && j <= n - j + 1 + 6 * n + 2 * n + j)
             {
                 Console.Write('-');
             }
         }
 
-        public override void PrintNextLines(int jIndex, int size, int iIndex)
+        public override void PrintNextLines(int j, int n, int i)
         {
+            if (j > 5 * n + i && j <= 6 * n + i + 1)
+            {
+                Console.Write('-');
+            }
 
+            //else if (length > )
         }
     }
 }
