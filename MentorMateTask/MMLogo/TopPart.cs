@@ -8,55 +8,55 @@
         {
         }
 
-        public override void PrintFirstLine(int jIndex, int size)
+        public override void PrintFirstLine(int j, int size)
         {
-            if (jIndex < size)
+            if (j < size)
             {
                 Console.Write('-');
             }
 
-            else if (jIndex > size && jIndex <= 2 * size)
+            else if (j > size && j <= 2 * size)
             {
                 Console.Write('*');
             }
 
-            else if (jIndex > 2 * size && jIndex <= 3 * size)
+            else if (j > 2 * size && j <= 3 * size)
             {
                 Console.Write('-');
             }
 
-            else if (jIndex > 3 * size && jIndex <= 4 * size)
+            else if (j > 3 * size && j <= 4 * size)
             {
                 Console.Write('*');
             }
 
-            else if (jIndex > 4 * size && jIndex <= 5 * size)
+            else if (j > 4 * size && j <= 5 * size)
             {
                 Console.Write('-');
             }
         }
 
-        public override void PrintNextLines(int jIndex, int size, int iIndex)
+        public override void PrintNextLines(int j, int size, int i)
         {
-            if (jIndex < size - iIndex)
+            if (j < size - i)
             {
                 Console.Write('-');
             }
-            else if (jIndex > size - iIndex && jIndex <= 2 * size + iIndex)
+            else if (j > size - i && j <= 2 * size + i)
             {
                 Console.Write('*');
             }
-            else if (jIndex > 2 * size - iIndex && jIndex <= 3 * size - iIndex)
+            else if (j > 2 * size - i && j <= 3 * size - i)
             {
                 Console.Write('-');
             }
 
-            else if (jIndex > 3 * size - iIndex && jIndex <= 4 * size + iIndex)
+            else if (j > 3 * size - i && j <= 4 * size + i)
             {
                 Console.Write('*');
             }
 
-            else if (jIndex > 4 * size + iIndex && jIndex <= 5 * size)
+            else if (j > 4 * size + i && j <= 5 * size)
             {
                 Console.Write('-');
             }

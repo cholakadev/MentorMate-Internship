@@ -8,52 +8,63 @@
         {
         }
 
-        public override void PrintFirstLine(int j, int n)
+        public override void PrintFirstLine(int row, int size)
         {
-            if (j > 0 && j <= n - j - 1)
-            {
-                Console.Write('-');
-            }
-
-            else if (j > n - j - 1 && j <= n - j - 1 + 2 * n)
+            if (row < size)
             {
                 Console.Write('*');
             }
 
-            else if (j > n - j - 1 + 2 * n && j <= n - j + 1 + 2 * n)
+            else if (row > size && row <= 2 * size)
             {
                 Console.Write('-');
             }
 
-            else if (j > n - j + 1 + 2 * n && j <= n - j + 1 + 6 * n - 1)
+            else if (row > 2 * size && row <= 3 * size)
             {
                 Console.Write('*');
             }
 
-            else if (j > n - j + 1 + 6 * n - 1 && j <= n - j + 1 + 6 * n)
+            else if (row > 3 * size && row <= 4 * size)
             {
                 Console.Write('-');
             }
 
-            else if (j > n - j + 1 + 6 * n && j <= n - j + 1 + 6 * n + 2 * n)
+            else if (row > 4 * size && row <= 5 * size)
             {
                 Console.Write('*');
-            }
-
-            else if (j > n - j + 1 + 6 * n + 2 * n && j <= n - j + 1 + 6 * n + 2 * n + j)
-            {
-                Console.Write('-');
             }
         }
 
-        public override void PrintNextLines(int j, int n, int i)
+        public override void PrintNextLines(int row, int size, int col)
         {
-            if (j > 5 * n + i && j <= 6 * n + i + 1)
+            if (row - 1 < size - col - size + 1)
             {
                 Console.Write('-');
             }
 
-            //else if (length > )
+            else if (row > size - col && row <= 2 * size - col)
+            {
+                Console.Write('*');
+            }
+            //else if (row > size - col && row <= 2 * size + col)
+            //{
+            //    Console.Write('*');
+            //}
+            //else if (row > 2 * size - col && row <= 3 * size - col)
+            //{
+            //    Console.Write('-');
+            //}
+
+            //else if (row > 3 * size - col && row <= 4 * size + col)
+            //{
+            //    Console.Write('*');
+            //}
+
+            //else if (row > 4 * size + col && row <= 5 * size)
+            //{
+            //    Console.Write('-');
+            //}
         }
     }
 }

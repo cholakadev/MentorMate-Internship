@@ -18,7 +18,7 @@
 
             BottomPart bottomPart = new BottomPart(logoLength, logoHeight, size);
 
-            print.PrintPart(bottomPart);
+            print.PrintBottomPart(bottomPart);
         }
     }
 }

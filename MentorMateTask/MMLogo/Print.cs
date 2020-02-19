@@ -5,20 +5,40 @@
     {
         public void PrintPart(IPart part)
         {
-            for (int i = 0; i < part.LogoHeight / 2; i++)
+            for (int col = 0; col < part.LogoHeight / 2; col++)
             {
-                for (int j = 0; j < part.LogoLength + 1; j++)
+                for (int row = 0; row < part.LogoLength + 1; row++)
                 {
-                    if (i == 0)
+                    if (row == 0)
                     {
-                        part.PrintFirstLine(j, part.Size);
+                        part.PrintFirstLine(row, part.Size);
                     }
 
                     /* Depening on first line, print all the other lines 
                      * by decreasing or increasing the amount of '-'/'*' */
                     else
                     {
-                        part.PrintNextLines(j, part.Size, i);
+                        part.PrintNextLines(row, part.Size, col);
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public void PrintBottomPart(IPart part)
+        {
+            for (int col = 0; col < part.LogoHeight / 2; col++)
+            {
+                for (int row = 0; row < part.LogoLength + 1; row++)
+                {
+                    if (col == part.Size / 2)
+                    {
+                        part.PrintFirstLine(row, part.Size);
+                    }
+
+                    else
+                    {
+                        part.PrintNextLines(row, part.Size, col);
                     }
                 }
                 Console.WriteLine();
