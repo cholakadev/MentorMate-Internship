@@ -38,33 +38,7 @@
 
         public override void PrintNextLines(int row, int size, int col)
         {
-            if (row - 1 < size - col - size + 1)
-            {
-                Console.Write('-');
-            }
-
-            else if (row > size - col && row <= 2 * size - col)
-            {
-                Console.Write('*');
-            }
-            //else if (row > size - col && row <= 2 * size + col)
-            //{
-            //    Console.Write('*');
-            //}
-            //else if (row > 2 * size - col && row <= 3 * size - col)
-            //{
-            //    Console.Write('-');
-            //}
-
-            //else if (row > 3 * size - col && row <= 4 * size + col)
-            //{
-            //    Console.Write('*');
-            //}
-
-            //else if (row > 4 * size + col && row <= 5 * size)
-            //{
-            //    Console.Write('-');
-            //}
+            
         }
     }
 }

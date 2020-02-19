@@ -3,7 +3,7 @@
     using System;
     public class Print
     {
-        public void PrintPart(IPart part)
+        public void PrintTopPart(IPart part)
         {
             for (int col = 0; col < part.LogoHeight / 2; col++)
             {

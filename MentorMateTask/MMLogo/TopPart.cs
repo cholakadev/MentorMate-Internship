@@ -8,55 +8,55 @@
         {
         }
 
-        public override void PrintFirstLine(int j, int size)
+        public override void PrintFirstLine(int row, int size)
         {
-            if (j < size)
+            if (row < size)
             {
                 Console.Write('-');
             }
 
-            else if (j > size && j <= 2 * size)
+            else if (row > size && row <= 2 * size)
             {
                 Console.Write('*');
             }
 
-            else if (j > 2 * size && j <= 3 * size)
+            else if (row > 2 * size && row <= 3 * size)
             {
                 Console.Write('-');
             }
 
-            else if (j > 3 * size && j <= 4 * size)
+            else if (row > 3 * size && row <= 4 * size)
             {
                 Console.Write('*');
             }
 
-            else if (j > 4 * size && j <= 5 * size)
+            else if (row > 4 * size && row <= 5 * size)
             {
                 Console.Write('-');
             }
         }
 
-        public override void PrintNextLines(int j, int size, int i)
+        public override void PrintNextLines(int row, int size, int col)
         {
-            if (j < size - i)
+            if (row < size - col)
             {
                 Console.Write('-');
             }
-            else if (j > size - i && j <= 2 * size + i)
+            else if (row > size - col && row <= 2 * size + col)
             {
                 Console.Write('*');
             }
-            else if (j > 2 * size - i && j <= 3 * size - i)
+            else if (row > 2 * size - col && row <= 3 * size - col)
             {
                 Console.Write('-');
             }
 
-            else if (j > 3 * size - i && j <= 4 * size + i)
+            else if (row > 3 * size - col && row <= 4 * size + col)
             {
                 Console.Write('*');
             }
 
-            else if (j > 4 * size + i && j <= 5 * size)
+            else if (row > 4 * size + col && row <= 5 * size)
             {
                 Console.Write('-');
             }
