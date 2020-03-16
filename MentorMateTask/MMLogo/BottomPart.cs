@@ -38,7 +38,12 @@
 
         public override void PrintNextLines(int row, int size, int col)
         {
-            
+            // row ++, col --
+
+            //if ()
+            //{
+            //    Console.Write('-');
+            //}
         }
     }
 }

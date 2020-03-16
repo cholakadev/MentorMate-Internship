@@ -13,6 +13,7 @@
         public int LogoHeight { get; set; }
         public int Size { get; set; }
 
+
         public abstract void PrintFirstLine(int iIndex, int size);
         public abstract void PrintNextLines(int jIndex, int size, int iIndex);
     }
